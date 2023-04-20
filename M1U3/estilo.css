@@ -1,0 +1,60 @@
+*{box-sizing: border-box;
+  
+ }
+
+
+body{
+    background-color: rgb(197, 197, 193);
+    font-family:'Times New Roman', Times, serif;
+
+
+}
+
+
+.titulo{
+        width: 80%;
+        text-align: center;
+        font-size: 40px;
+    
+
+}
+
+img {
+    margin:80px 40px;
+    border: 0.5px solid  rgb(0, 0, 0);}
+
+.datos{
+    
+    display: inline-block;
+    
+}
+.perfil{ 
+        width: 80%;
+        padding-top: 20px;
+    }
+
+        
+.imagenflex{
+    display: inline-block;
+    margin: 5px;
+    
+    
+}
+
+.imagenesflex{ 
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:flex-start;
+    
+
+
+    
+    
+   
+ 
+}
+
+
+
