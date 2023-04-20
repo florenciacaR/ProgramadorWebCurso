@@ -34,11 +34,12 @@ img {
    position:absolute;
    top: 120PX;
    left: 310px;
-   z-index: 1;
+  
 
    
-   }
+ }
    
+ 
    h3, ul {
     margin: 20px;
 }
