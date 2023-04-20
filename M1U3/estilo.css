@@ -30,7 +30,7 @@ img {
 
 .datos{
     
-   float: right;
+   
    position:absolute;
    top: 120PX;
    left: 310px;
@@ -39,7 +39,7 @@ img {
    
  }
    
- 
+
    h3, ul {
     margin: 20px;
 }
