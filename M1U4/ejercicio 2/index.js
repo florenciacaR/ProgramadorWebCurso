@@ -3,7 +3,7 @@
 Haciendo uso de los bucles, recorrer un array de números y determinar cual es el mayor */
 
 
-const num =[100, 0, 2000, 500, 354770, 1000,];
+const num =[100, 0, 2000, 500, 354770, 1000];
 let cont=0;
 let numMayor=0; 
 
