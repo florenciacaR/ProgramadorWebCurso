@@ -22,6 +22,6 @@ while (num.length > cont){
 
 }
 
- console.log(` el numero mayor del array es ${numMayor}` )
+ console.log(` el numero mayor del array es ${numMayor}` );
  
  
