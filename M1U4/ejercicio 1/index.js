@@ -11,26 +11,29 @@ reglas:
 +100000 = avión */ 
 
 let distancia=prompt("indique la distancia: ") ;
+let transporte;
 
 
 
 if (distancia>=0 && distancia <=1000){
 
-    prompt("pie") ;
+   transporte ="pie"; 
 
   }else if(distancia<=10000){
 
-    prompt("bicicleta") ;
+    transporte ="bicicleta";
 
   }else if( distancia<=30000){
 
-    prompt("colectivo");
+    transporte ="colectivo";
 
   }else if (distancia<=100000){
 
-    prompt("auto");
+    transporte ="auto";
 
   }else {
 
-    prompt("avion");
+    transporte ="avion";
   }
+
+  alert(transporte );
