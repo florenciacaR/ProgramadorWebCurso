@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(181, 180, 180);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.conteiner {
+  margin-top: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.box {
+  padding: 60px;
+  margin: 23px;
+  box-shadow: 7px 13px 40px rgb(44, 44, 44);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.box_first {
+  background-color: #ddbeef;
+}
+
+.box_second {
+  background-color: #beefeb;
+}
+
+.box_third {
+  background-color: #eaefbe;
+}
+
+.box:hover {
+  border: 1.3px solid black;
+  transform: scale(1.1);
+}
