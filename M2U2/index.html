@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/style.css" />
+   
+    
+
+    <title>Ejercicio con Bootstrap</title>
+  </head>
+  <body class="text-warning">
+    <h1 class="text-center pt-5 display-3 fw-bold">Lorem, ipsum dolor</h1>
+    <h3 class="text-center pt-2 fs-4 fw-light">
+      Lorem ipsum dolor sit amet consectetur
+    </h3>
+
+
+    <section class="conteiner">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel- slide w-100 mb-5 mx-auto py-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="img1 carousel-item active">
+            <img
+              class="d-block w-100"
+              src="https://fakeimg.pl/600x200"
+              alt="Imagen de prueba"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://fakeimg.pl/600x200"
+              class="d-block w-100"
+              alt="imagen de prueba"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+    <section class="conteiner d-flex justify-content-evenly mb-5 pb-3  ">
+      <div class="card text-light bg-dark" style="width: 16rem">
+        <img src="https://fakeimg.pl/300x200" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Título de la tarjeta</h5>
+          <p class="card-text">
+            Un texto de ejemplo rápido para colocal cerca del título de la
+            tarjeta y componer la mayor parte del contenido de la tarjeta.
+          </p>
+          <a href="#" class="btn btn-warning">Ir a algún lugar</a>
+        </div>
+      </div>
+
+      <div class="card text-light bg-dark shadow-lg" style="width: 16rem">
+        <img src="https://fakeimg.pl/300x200" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Título de la tarjeta</h5>
+          <p class="card-text">
+            Un texto de ejemplo rápido para colocal cerca del título de la
+            tarjeta y componer la mayor parte del contenido de la tarjeta.
+          </p>
+          <a href="#" class="btn btn-warning">Ir a algún lugar</a>
+        </div>
+      </div>
+
+      <div class="card text-light bg-dark" style="width: 16rem">
+        <img src="https://fakeimg.pl/300x200" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Título de la tarjeta</h5>
+          <p class="card-text">
+            Un texto de ejemplo rápido para colocal cerca del título de la
+            tarjeta y componer la mayor parte del contenido de la tarjeta.
+          </p>
+          <a href="#" class="btn btn-warning">Ir a algún lugar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="conteiner">
+      <h3 class="m-5 pt-5 fs-1 text-center">Contacto</h3>
+
+      <form class="g-3 needs-validation  offset-lg-4" novalidate>
+        <div class="col-md-7 ">
+          <label for="validationCustom01" class="form-label"></label>
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="form-control bg-dark border-0 text-light"
+            id="validationCustom01"
+            required
+          />
+          <div class="valid-feedback">¡Se ve bien!</div>
+          <div class="invalid-feedback text-warning">
+            Por favor, ingrese su nombre.
+          </div>
+        </div>
+        <div class="col-md-7 ">
+          <label for="validationCustom02" class="form-label mt-5"></label>
+          <input
+            type="email"
+            class="form-control bg-dark border-0 text-light"
+            id="validationCustom02"
+            placeholder="Email"
+            required
+          />
+
+          <div class="valid-feedback">¡Se ve bien!</div>
+          <div class="invalid-feedback text-warning">
+            Por favor, ingrese su email.
+          </div>
+        </div>
+
+        <div class="mb-3 col-6 col-md-7 ">
+          <label
+            for="exampleFormControlTextarea1"
+            class="form-label mt-5"
+          ></label>
+          <textarea
+            placeholder="Dejanos tu comentario..."
+            class="form-control bg-dark border-0 text-light"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="col-12 mt-4">
+          <button class="btn btn-warning m-3 mb-5" type="submit">
+            Enviar formulario
+          </button>
+        </div>
+      </form>
+    </section>
+
+
+
+
+    <footer>
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container-fluid  col-4  ">
+              
+                <ul class="list-group list-group-horizontal ">
+                    <li class="list-group-item bg-dark mx-5  ">
+                        <a href="#"><i class="bi bi-instagram text-warning fs-4"></i></a>
+                    </li>
+                    <li class="list-group-item bg-dark mx-5 >
+                        <a href="#"><i class="bi bi-twitter text-warning fs-4"></i></a>
+
+                    </li>
+                    <li class="list-group-item bg-dark mx-5 ">
+                        <a href="#"><i class="bi bi-whatsapp text-warning fs-4"></i></a>
+                    </li>
+                  </ul>
+               
+              
+            </div>
+          </nav>
+
+    </footer>
+
+    <script>
+      // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+      (function () {
+        "use strict";
+
+        // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Bucle sobre ellos y evitar el envío
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
