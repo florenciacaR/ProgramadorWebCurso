@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var session = require ('express-session');
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -19,25 +21,33 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret: 'asdfghjklasdfghjkasd',
+  resave: false,
+  saveUninitialized: true
+}));
+app.get ('/', (req,res)=>{
+  var conocido = Boolean (req.session.nombre);
+
+  res.render('index', {
+    title: 'Sesiones en Express',
+    conocido: conocido,
+    nombre: req.session.nombre
+  });
+});
+app.post ('/ingresar', (req,res)=>{
+
+  if(req.body.nombre){
+    req.session.nombre = req.body.nombre;
+  };
+  res.redirect('/');
+});
+app.get ('/salir', (req,res)=>{
+  req.session.destroy();
+  res.redirect('/');
+});
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
-/*rutas*/
-app.get(
-  
-)
-app.get("/conocenos", function(req,res){
-  res.send("hola soy la pagina de conocenos")
-})
-app.get("/nosotros", function(req,res){
-  res.send("hola soy la pagina de nosotros")
-})
-app.get("/historia", function(req,res){
-  res.send("hola soy la pagina de historia")
-})
-app.get("/novedades", function(req,res){
-  res.send("hola soy la pagina de novedades")
-})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
